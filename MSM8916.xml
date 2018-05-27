@@ -6,24 +6,43 @@
 
 
 <!-- osprey stuff -->
-<project path="device/motorola/osprey" name="LOS-MSM8916/device_motorola_osprey" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/osprey" name="LOS-MSM8916/device_motorola_osprey" revision="du-o8x" remote="git"/>
 
 <!-- surnia stuff -->
-<project path="device/motorola/surnia" name="LOS-MSM8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/surnia" name="LOS-MSM8916/device_motorola_surnia" revision="du-o8x" remote="git"/>
   
 <!-- merlin stuff -->
-<project path="device/motorola/merlin" name="LOS-MSM8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/merlin" name="LOS-MSM8916/device_motorola_merlin" revision="du-o8x" remote="git"/>
   
 <!-- lux stuff -->
-<project path="device/motorola/lux" name="LOS-MSM8916/device_motorola_lux" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/lux" name="LOS-MSM8916/device_motorola_lux" revision="du-o8x" remote="git"/>
   
 <!-- harpia stuff -->
-<project path="device/motorola/harpia" name="LOS-MSM8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/harpia" name="LOS-MSM8916/device_motorola_harpia" revision="du-o8x" remote="git"/>
 
 <!-- msm8916 stuff -->
-<project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="du-o8x" remote="git"/>
 <project path="kernel/motorola/msm8916" name="LOS-MSM8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
 <project path="vendor/motorola" name="LOS-MSM8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
+	
+<!-- LOS -->
+<remove-project path="hardware/ril" name="android_hardware_ril"/>
+<project name="LineageOS/android_hardware_ril" path="hardware/ril" remote="git" revision="lineage-15.1-caf" />
+<project name="LineageOS/android_system_qcom" path="system/qcom" remote="git" revision="lineage-15.1" />
+<project path="hardware/qcom/audio-caf/msm8916" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="git" revision="lineage-15.1-caf-8916" />
+<project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="git" revision="lineage-15.1-caf-8916" />
+<project path="hardware/qcom/media-caf/msm8916" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" remote="git" revision="lineage-15.1-caf-8916" />
+
+<!-- DU -->
+<remove-project path="vendor/du" name="android_vendor_du"/>
+<remove-project path="frameworks/av" name="android_frameworks_av"/>
+<project name="MOTO-M8916/vendor_du" path="vendor/du" remote="git" revision="du-o8x" />
+<project name="MOTO-M8916/frameworks_av" path="frameworks/av" remote="git" revision="du-o8x" />
+<project name="DirtyUnicorns/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="git" revision="o8x-caf" />
+<project name="DirtyUnicorns/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="git" revision="o8x-caf" />
+  
+<!-- Linaro 7.2 toolchain -->
+<project name="MOTO-M8916/prebuilts_gcc_linux-x86_arm_arm-eabi-7.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" remote="git" revision="master" />
 
 </manifest>
 
