@@ -28,9 +28,9 @@ eg :
     mkdir lineage
     cd lineage
 
-5.To initialize your local repository using the LineageOS trees, use a command like this:
+5.To initialize your local repository using the DU trees, use a command like this:
 
-    repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
+    repo init -u https://github.com/DirtyUnicorns/android_manifest.git -b o8x-caf
 
 6.Now create a local_manifests dir and Copy the required manifests in that folder.
 
@@ -54,5 +54,5 @@ OR, for those with limited bandwidth/storage:
 
     brunch codename  
 
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
+Please see the [DU Guide](https://raw.githubusercontent.com/nathanchance/Android-Tools/master/Guides/Building_AOSP.txt) for building instructions.
 
