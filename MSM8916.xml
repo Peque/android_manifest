@@ -13,12 +13,6 @@
   
 <!-- merlin stuff -->
 <project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="du-o8x" remote="git"/>
-  
-<!-- lux stuff
-<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="du-o8x" remote="git"/> -->
-  
-<!-- harpia stuff -->
-<project path="device/motorola/harpia" name="MOTO-M8916/device_motorola_harpia" revision="du-o8x" remote="git"/>
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="du-o8x" remote="git"/>
@@ -35,9 +29,7 @@
 
 <!-- DU -->
 <remove-project path="vendor/du" name="android_vendor_du"/>
-<remove-project path="frameworks/av" name="android_frameworks_av"/>
 <project name="MOTO-M8916/vendor_du" path="vendor/du" remote="git" revision="du-o8x" />
-<project name="MOTO-M8916/frameworks_av" path="frameworks/av" remote="git" revision="du-o8x" />
 <project name="DirtyUnicorns/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="git" revision="o8x-caf" />
 <project name="DirtyUnicorns/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="git" revision="o8x-caf" />
   
